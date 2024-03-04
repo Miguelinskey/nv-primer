@@ -1,0 +1,25 @@
+{
+  "name": "nv-primer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "sass --load-path=node_modules/@primer/css --load-path=node_modules src/index.scss dist/primer.css",
+    "watch-css": "nodemon --watch src/primer.scss --exec 'npm run build-css'",
+    "copy-html": "cp src/index.html dist/index.html",
+    "watch-html": "nodemon --watch src/index.html --exec 'npm run copy-html'",
+    "serve": "lite-server --baseDir='dist'",
+    "start": "concurrently \"npm run serve\" \"npm run watch-css\" \"npm run watch-html\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@primer/css": "^21.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "lite-server": "^2.6.1",
+    "nodemon": "^3.1.0",
+    "sass": "^1.71.1"
+  }
+}
