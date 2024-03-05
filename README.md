@@ -1,6 +1,6 @@
 # Nuvocargo Primer
 
-This repository contains a custom build of Primer CSS, tailored for Nuvocargo with our own nuvocargo-light theme and color-modes structure & variables. It's designed to stay in sync with upstream Primer while allowing for requirements.
+This is a custom build of Primer CSS especially tailored for Nuvocargo. It's designed to stay in sync with upstream Primer, features support for nuvocargo-light & nuvocargo-dark themes and includes enhanced documentation site.
 
 ## Quick Start
 
@@ -9,12 +9,11 @@ npm install   # Install dependencies
 npm start     # Start the development server with live reloading
 ```
 
-## Customizations
+## Changes
 
-- Custom Themes: Incorporates nuvocargo-light.css for a branded look and feel.
-- Variable Adjustments: Our own variable set is included for consistent theming.
-- Reduced Complexity: Marketing components have been removed for simplicity.
+- **Color Modes:** nuvocargo-light & nuvocargo-dark are set as the default themes.
+- **Reduced Complexity:** Marketing and other extra components have been removed for simplicity.
 
 ## Documentation
 
-We've enhanced the documentation to be more comprehensive and user-friendly than the official Primer documentation. The npm start command sets up a development environment that watches for changes in the src folder.
+The npm start command sets up a development environment that watches for changes in the src folder and launches the included documentation site.
